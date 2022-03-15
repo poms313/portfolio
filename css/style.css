@@ -34,9 +34,12 @@ body {
   justify-content: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
 .custom-btn {
-  display: block;
-  min-width: 80px;
+  display: inline-block;
+  width: 130px;
   margin: 10px auto;
   padding: 10px;
   text-transform: uppercase;
@@ -50,9 +53,33 @@ body {
   color: var(--color-white);
 }
 
+.black-button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.blue-button {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
 .purple-button {
   background-color: var(--color-purple);
   color: var(--color-white);
+}
+
+.title {
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.blue-title {
+  color: var(--color-blue);
+}
+
+section {
+  margin: 50px auto;
 }
 
 header {
@@ -69,14 +96,16 @@ header {
 }
 
 header nav {
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
   background: rgba(255, 255, 255, 0.3);
 }
 
 header .stickyNav {
-  background: var(--color-white);
-  position: sticky;
+  position: fixed;
   top: 0px;
+  z-index: 1000;
+  width: 100%;
+  background: var(--color-white);
+  box-shadow: 0 0 4px var(--color-grey);
 }
 
 header nav #space {
@@ -94,8 +123,19 @@ header .intro-container {
 
 header .intro-title {
   font-size: 2rem;
-  font-weight: 600;
   color: var(--color-black);
+}
+
+#presentation #my-photo {
+  border-radius: 100%;
+  filter: blur(2px);
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 900px) {

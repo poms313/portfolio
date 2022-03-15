@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (entry.isIntersecting) {
                     let lazyImage = entry.target;
                     lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.classList.replace("lazyLoad", "loaded");
+                    lazyImage.classList.remove("lazyLoad");
                     lazyImageObserver.unobserve(lazyImage);
                 }
             });
