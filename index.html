@@ -60,7 +60,7 @@
             </div>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1440 97" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="" viewBox="0 0 1440 97" fill="none">
             <path
                 d="M0 97L60 87.3C120 77.6 240 58.2 360 54.9566C480 51.8344 600 64.5656 720 67.9C840 71.2344 960 64.5656 1080 51.7434C1200 38.8 1320 19.4 1380 9.7L1440 0V97H1380C1320 97 1200 97 1080 97C960 97 840 97 720 97C600 97 480 97 360 97C240 97 120 97 60 97H0Z"
                 fill="white" />
@@ -68,55 +68,255 @@
     </header>
 
     <section id="presentation">
-        <div class="container ">
-            <div class="row m-4">
-                <div class="col-md test">
-                    <h3 class="title blue-title">Qui suis-je?</h3>
-                    <p>Nom: Fillatre</p>
-                    <p>Prénom: Pommine</p>
-                    <p>Née en 1987</p>
-                    <p>Proche de Toulouse</p>
-                    <p>Permis et véhicule personnel</p>
-                    <p><img id="my-photo" class="lazyLoad shadow" src="images/lazyload.gif" data-src="images/photo.jpg"
-                            alt="ma photo"></p>
+        <div class="row m-4">
+            <div class="col-md flex-column">
+                <h2 class="title blue-title">Qui suis-je?</h2>
+                <p>Nom: Fillatre</p>
+                <p>Prénom: Pommine</p>
+                <p>Née en 1987</p>
+                <p>Proche de Toulouse</p>
+                <p>Permis et véhicule personnel</p>
+                <p><img id="my-photo" class="lazyLoad shadow" src="images/lazyload.gif" data-src="images/photo.jpg"
+                        alt="ma photo"></p>
 
 
-                </div>
-                <div class="col-md test">
-                    <h3 class="title blue-title">A propos:</h3>
-                    <p class="text-justify">
-                        Je suis passionnée depuis toujours par l'informatique et les nouvelles technologies. J'ai
-                        donc choisi de faire une reconversion professionnelle afin de travailler dans un domaine qui me
-                        correspond réellement. J'ai pu acquérir de nombreuses compétences professionnelles en suivant le
-                        parcours de développeur Web (niveau bac+2) chez OpenClassrooms. Depuis que j'ai obtenu le
-                        diplome,
-                        je
-                        continue à me former.
-                    </p>
-                    <p class="text-justify">À la fois intéressée par le développement back-end et front-end, le
-                        développement côté Back-End m'a plus particulièrement captivé. Le fait d'apprendre de nouveaux
-                        langages de développement me plait.</p>
-                </div>
             </div>
-            <p>
-                <a class="custom-btn shadow black-button" href="https://github.com/poms313"
-                    rel="noopener noreferrer nofollow" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-                <a class="custom-btn shadow blue-button" href="https://www.linkedin.com/in/pommine-fillatre"
-                    rel="noopener noreferrer nofollow" target="_blank"><i class="bi bi-linkedin"></i></i> Linkedin</a>
-                <a class="custom-btn shadow purple-button" href="https://codepen.io/diablo313"
-                    rel="noopener noreferrer nofollow" target="_blank"><i class="bi bi-code-slash"></i> CodePen</a>
-            </p>
+            <div class="col-md flex-column">
+                <h2 class="title blue-title">A propos:</h2>
+                <p class="text-justify">
+                    Je suis passionnée depuis toujours par l'informatique et les nouvelles technologies. J'ai
+                    donc choisi de faire une reconversion professionnelle afin de travailler dans un domaine qui me
+                    correspond réellement. J'ai pu acquérir de nombreuses compétences professionnelles en suivant le
+                    parcours de développeur Web (niveau bac+2) chez OpenClassrooms. Depuis que j'ai obtenu le
+                    diplome,
+                    je
+                    continue à me former.
+                </p>
+                <p class="text-justify">À la fois intéressée par le développement back-end et front-end, le
+                    développement côté Back-End m'a plus particulièrement captivé. Le fait d'apprendre de nouveaux
+                    langages de développement me plait.</p>
+            </div>
         </div>
-        <div class="container">
-            <div class="row">
+        <p>
+            <a class="custom-btn shadow black-button" href="https://github.com/poms313"
+                rel="noopener noreferrer nofollow" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+            <a class="custom-btn shadow blue-button" href="https://www.linkedin.com/in/pommine-fillatre"
+                rel="noopener noreferrer nofollow" target="_blank"><i class="bi bi-linkedin"></i></i> Linkedin</a>
+            <a class="custom-btn shadow purple-button" href="https://codepen.io/diablo313"
+                rel="noopener noreferrer nofollow" target="_blank"><i class="bi bi-code-slash"></i> CodePen</a>
+        </p>
+    </section>
 
+    <section id="skills">
+        <h2 class="title pink-title">Compétences</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="circle center">
+                    <h3>Bases</h3>
+                </div>
             </div>
+            <div class="col-md-8">
+                <div class="skills-row">
+                    <div class="skills-item skills-itemBy3">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/html5.svg"
+                                alt="Html 5">
+                            <figcaption>Html 5</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy3">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/css3.svg"
+                                alt="CSS 3">
+                            <figcaption>CSS 3</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy3">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif"
+                                data-src="images/logosLanguages/bootstrap.svg" alt="bootstrap">
+                            <figcaption>Bootstrap</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-md-4">
+                <div class="circle center">
+                    <h3>CMS</h3>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="skills-row">
+                    <div class="skills-item skills-itemBy3">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif"
+                                data-src="images/logosLanguages/wordpress.svg" alt="Word Press">
+                            <figcaption>WordPress</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy3">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif"
+                                data-src="images/logosLanguages/prestashop.svg" alt="Prestashop">
+                            <figcaption>Prestashop</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy3">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/shopify.svg"
+                                alt="Shopify">
+                            <figcaption>Shopify</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="circle center">
+                    <h3>Code</h3>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="skills-row">
+                    <div class="skills-item skills-itemBy3">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/git.svg"
+                                alt="GitHub">
+                            <figcaption>GitHub</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy3">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/visual.svg"
+                                alt="Visual Studio Code">
+                            <figcaption>Visual Studio Code</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy3">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/w3c.svg"
+                                alt="W3C">
+                            <figcaption>W3C</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="circle center">
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="skills-row">
+                    <div class="skills-item skills-itemBy4">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif"
+                                data-src="images/logosLanguages/javascript.svg" alt="Javascript">
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy4">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/react.svg"
+                                alt="React">
+                            <figcaption>React 16</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy4">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/angular.svg"
+                                alt="Angular">
+                            <figcaption>Angular 13</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy4">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/jquery.svg"
+                                alt="Jquery">
+                            <figcaption>Jquery 3</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="circle center">
+                    <h3>Back-end</h3>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="skills-row">
+                    <div class="skills-item skills-itemBy4">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/php.svg"
+                                alt="PHP">
+                            <figcaption>PHP 8</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy4">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/symfony.svg"
+                                alt="Symfony">
+                            <figcaption>Symfony 5</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy4">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif" data-src="images/logosLanguages/mysql.svg"
+                                alt="My SQL">
+                            <figcaption>Mysql 8</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills-item skills-itemBy4">
+                        <figure>
+                            <img class="lazyLoad" src="images/lazyload.gif"
+                                data-src="images/logosLanguages/phpmyadmin.svg" alt="Php My Admin">
+                            <figcaption>PhpMyadmin 5</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
     </section>
-    <section id="skills">competences</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section id="portfolio">portfolio</section>
     <section id="contact">contact
 
