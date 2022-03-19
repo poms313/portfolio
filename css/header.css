@@ -1,0 +1,43 @@
+header {
+  background: linear-gradient(
+    90deg,
+    var(--color-dark-purple),
+    var(--color-blue),
+    var(--color-pink),
+    var(--color-purple)
+  );
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header nav {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+header .stickyNav {
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  width: 100%;
+  background: var(--color-white);
+  box-shadow: 0 0 4px var(--color-grey);
+}
+
+header nav #space {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .intro-container {
+  width: 90%;
+  margin: auto;
+  padding: 50px;
+}
+
+header .intro-title {
+  font-size: 2rem;
+  color: var(--color-black);
+}

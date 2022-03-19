@@ -1,0 +1,151 @@
+#portfolio #btnWorks input {
+  display: none;
+}
+
+#portfolio label.all,
+#portfolio label.html,
+#portfolio label.cms,
+#portfolio label.js,
+#portfolio label.angular,
+#portfolio label.symfony,
+#portfolio label.api,
+#portfolio label.php,
+#portfolio label.appli {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  width: 100px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--color-blue);
+  cursor: pointer;
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
+
+#portfolio #btnWorks > .html:hover,
+#portfolio #btnWorks > .html:focus,
+#portfolio #btnWorks > .cms:hover,
+#portfolio #btnWorks > .cms:focus,
+#portfolio #btnWorks > .api:hover,
+#portfolio #btnWorks > .api:focus,
+#portfolio #btnWorks > .js:hover,
+#portfolio #btnWorks > .js:focus,
+#portfolio #btnWorks > .angular:hover,
+#portfolio #btnWorks > .angular:focus,
+#portfolio #btnWorks > .symfony:hover,
+#portfolio #btnWorks > .symfony:focus,
+#portfolio #btnWorks > .php:hover,
+#portfolio #btnWorks > .php:focus,
+#portfolio #btnWorks > .appli:hover,
+#portfolio #btnWorks > .appli:focus {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  transition: all 1s;
+}
+
+#portfolio .all:checked ~ label.all,
+#portfolio .html:checked ~ label.html,
+#portfolio .cms:checked ~ label.cms,
+#portfolio .api:checked ~ label.api,
+#portfolio .js:checked ~ label.js,
+#portfolio .angular:checked ~ label.angular,
+#portfolio .symfony:checked ~ label.symfony,
+#portfolio .php:checked ~ label.php,
+#portfolio .appli:checked ~ label.appli {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  transition: all 1s;
+}
+
+@media screen and (min-width: 769px) {
+  #portfolio .all:checked ~ label.all:after,
+  #portfolio .html:checked ~ label.html:after,
+  #portfolio .cms:checked ~ label.cms:after,
+  #portfolio .api:checked ~ label.api:after,
+  #portfolio .js:checked ~ label.js:after,
+  #portfolio .angular:checked ~ label.angular:after,
+  #portfolio .symfony:checked ~ label.symfony:after,
+  #portfolio .php:checked ~ label.php:after,
+  #portfolio .appli:checked ~ label.appli:after {
+    content: "";
+    display: block;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 2rem solid var(--color-blue);
+    position: absolute;
+    top: 100%;
+  }
+}
+
+#portfolio #works {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#portfolio #btnWorks,
+#portfolio #works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#portfolio .html:checked ~ #works .portfolio-item:not(.html),
+#portfolio .cms:checked ~ #works .portfolio-item:not(.cms),
+#portfolio .api:checked ~ #works .portfolio-item:not(.api),
+#portfolio .js:checked ~ #works .portfolio-item:not(.js),
+#portfolio .angular:checked ~ #works .portfolio-item:not(.angular),
+#portfolio .symfony:checked ~ #works .portfolio-item:not(.symfony),
+#portfolio .php:checked ~ #works .portfolio-item:not(.php),
+#portfolio .appli:checked ~ #works .portfolio-item:not(.appli) {
+  position: absolute;
+  opacity: 0;
+  transform: translate(-200%, -200%) scale(0);
+}
+
+#portfolio #works .portfolio-item {
+  width: 100%;
+  height: 333px;
+  position: relative;
+  cursor: pointer;
+  transition: all 2s;
+  margin: 10px auto;
+}
+
+@media screen and (min-width: 769px) {
+  #portfolio #works .portfolio-item {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1069px) {
+  #portfolio #works .portfolio-item {
+    width: 30%;
+  }
+}
+
+#portfolio img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+#portfolio .portfolio-item .portfolio-hover {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  display: grid;
+  align-items: center;
+  transition: 0.5s ease;
+  background-color: var(--color-white);
+}
+
+#portfolio .portfolio-item:focus .portfolio-hover,
+#portfolio .portfolio-item:hover .portfolio-hover {
+  opacity: 1;
+  z-index: 5;
+}
