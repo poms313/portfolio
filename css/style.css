@@ -91,7 +91,7 @@
 }
 
 .title {
-  padding: 10px;
+  padding: 10px auto;
   letter-spacing: 1px;
   font-size: 2rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;

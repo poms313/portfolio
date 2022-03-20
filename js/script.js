@@ -37,4 +37,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    /* On contact form submit */
+    const submitBtn = document.getElementById('contact-submit');
+    submitBtn.addEventListener('click', verifyForm);
+    const form = document.getElementById('contactForm')
+
+    function verifyForm (event) {
+        const formValidity = form.checkValidity();
+        if (formValidity === false) {
+            event.preventDefault();
+        } else {
+            form.action = "contact.php";
+        }
+        form.classList.add('was-validated');
+    }
+
 });

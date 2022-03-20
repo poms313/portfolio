@@ -1,0 +1,66 @@
+/* Regles pour les tablettes et les portables */
+@media all and (max-width: 768px) {
+
+    nav label,
+    nav input {
+        display: block;
+    }
+
+    nav ul,
+    header h2 {
+        display: none;
+    }
+
+    input.navicon:checked~.menu {
+        display: block;
+        top: 0;
+        left: 0;
+        width: 50%;
+        position: absolute;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    #intro img {
+        display: none;
+    }
+
+    #container {
+        height: auto;
+    }
+
+    .slide {
+        height: 500px;
+    }
+
+    #map-container {
+        height: 200px;
+        width: 100%;
+        border-bottom: 1px solid #000;
+    }
+
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media all and (min-width: 768px) {
+
+
+    #container {
+        display: flex;
+    }
+
+    #map-container {
+        width: 100%;
+        height: auto;
+    }
+
+    #side-bar {
+        width: 40%;
+    }
+}

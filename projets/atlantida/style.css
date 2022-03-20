@@ -1,0 +1,143 @@
+
+body {
+  padding-top: 50px;
+  font-family: "Montserrat";
+ 
+}
+
+.navbar {
+  width: 100%;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.textOnImg {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: calc(1em + 1vw);
+}
+
+h1 {
+  border-style: dotted none;
+  border-color: white;
+  border-size: 10px;
+  padding: 30px;
+  margin: 50px;
+  font-size: calc(1em + 3vw);
+}
+
+h2 {
+  border-bottom: 10px dotted black;
+  text-align: center;
+  padding: 20px;
+  width: 40%;
+  margin: 30px auto;
+  font-size: calc(1em + 2vw);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: calc(1em + 1vw);
+  margin: 40px 10px;
+}
+
+.get {
+  border: 2px solid white;
+  width: 20%;
+  padding: 20px;
+}
+
+
+.Button_Contact {
+  margin: 15px;
+  color: rgb(206, 206, 206);
+  background-color: rgb(62, 61, 61);
+}
+
+
+.Button_Portfolio {
+  margin: 15px;
+  border-width: 1.8px;
+  border-color: rgb(62, 61, 61);
+  border-style: solid;
+}
+
+#services {
+  background-image: url(images/services.png);
+  color: white;
+}
+
+.border {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.bordernoir {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#team {
+  background-image: url(images/team.png);
+  background-size: cover;
+}
+
+
+.gris {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+#clients img {
+  margin: 20px;
+}
+
+#avis {
+  background-image: url(images/avisb.png);
+  color: white;
+}
+
+#avis img {
+  margin: 30px auto;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.maps {
+  background-image: url(images/maps.png);
+  text-align: center;
+  margin: auto;
+  height: 400px;
+  position: relative;
+}
+
+.maps img {
+  position: absolute;
+  top: 50%;
+  margin: auto;
+}
+
+#contact button {
+  color: black;
+}
+
+input {
+  margin: 20px;
+}
+form {
+  color: black;
+}

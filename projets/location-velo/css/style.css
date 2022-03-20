@@ -1,0 +1,295 @@
+/* General style */
+body {
+    background-color: #d8d8d8;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label,
+input {
+    margin: auto;
+    padding: 5px;
+    display: block;
+    width: 100px;
+}
+
+label {
+    float: left;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+button:disabled {
+    background-color: #959595;
+    border: 1px solid #000;
+}
+
+button:hover:not(:disabled) {
+    box-shadow: 3px 3px 10px 1px rgba(149, 149, 149, 0.7),
+        -3px -3px 10px 1px rgba(149, 149, 149, 0.7);
+}
+
+.red {
+    padding: 10px;
+    background-color: #ff8484;
+    border: 3px solid #ff0000;
+}
+
+.green {
+    padding: 10px;
+    background-color: #aaff8e;
+    border: 3px solid #3ff702;
+}
+
+.white {
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.shadow {
+    box-shadow: 5px 5px 10px 3px rgba(133, 133, 133, 0.7),
+    -5px -5px 10px 3px rgba(133, 133, 133, 0.7);
+}
+
+h2 {
+    color: #000;
+}
+
+
+/* Nav */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    margin: auto 0;
+}
+
+nav .navicon,
+nav label {
+    display: none;
+}
+
+nav label {
+    font: 300 40px'fontawesome';
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: all 300ms linear;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav a {
+    padding: 0 20px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Style of slider */
+
+#intro {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#slider-inner {
+    position: relative;
+     }
+
+#slider {
+   
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+    width: 90%;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.slide {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-slider {
+   
+    height:200px;
+    margin: 5px;
+}
+
+.image-slider img {
+    width: 100%;
+}
+
+.iconSlide {
+    width: 23px;
+}
+
+.text-slider {
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bouton-slider {
+    
+    position: absolute;
+    color:#585858;
+    font-size: 1.8em;
+}
+
+.bouton-slider :hover {
+    color: #000;
+}
+
+#left {
+    left: 5px;
+    bottom: 50%;
+}
+
+#right {
+    right: 5px;
+    bottom: 50%;
+}
+
+.start-slider,
+.stop-slider {
+    position: absolute;
+    bottom: -30px;
+    left: 47%;
+}
+
+
+
+
+/* Style of the map and sidebar */
+#container {
+    height: 450px;
+    position: relative;
+}
+
+#map-container {
+    border-right: 1px solid #000;
+}
+
+#side-bar {
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+/* Style of the stations */
+.open {
+    background-image: url(../images/station-open.png);
+    background-size: cover;
+    height: 40px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.not-available {
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    cursor: no-drop;
+}
+
+.empty {
+    background-image: url(../images/station-empty.png);
+
+}
+
+.closed {
+    background-image: url(../images/station-close.png);
+}
+
+
+/* Style of the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content and canvas */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 10px solid #888;
+    width: 60%;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#canvas {
+    cursor: crosshair; 
+    background-color:#fcf4a9;
+}
+
+/* Style of the footer*/
+.booking {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#booking-true {
+    display: none;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+}
+
