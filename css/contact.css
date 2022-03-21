@@ -8,12 +8,13 @@
   background-color: var(--color-pink);
   color: var(--color-white);
   text-transform: uppercase;
+  font-size: 3rem;
 }
 
 #contact .contact-btn:hover,
 #contact .contact-btn:focus {
   background-color: var(--color-white);
-  border: 2px solid var(--color-pink);
+  border: 6px outset var(--color-pink);
   color: var(--color-pink);
   font-weight: 900;
 }

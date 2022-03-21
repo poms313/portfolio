@@ -38,15 +38,16 @@
   padding: 10px;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 500;
   border-radius: 5px;
-  border: 2px solid var(--color-grey);
+  border: 4px outset var(--color-grey);
+  background-color: var(--color-white);
   cursor: pointer;
 }
 
 .custom-btn:hover,
 .custom-btn:focus {
   font-weight: 700;
-  background-color: var(--color-grey);
   color: var(--color-white);
 }
 
@@ -91,9 +92,9 @@
 }
 
 .title {
-  padding: 10px auto;
+  margin: 1.5rem auto;
   letter-spacing: 1px;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 

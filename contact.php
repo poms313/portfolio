@@ -17,8 +17,6 @@ if (!empty($_POST)) {
 
 function checkdata($dataSendByUser)
 {
-    print_r($dataSendByUser);
-    print_r($_POST);
     $humans = cleanData(($dataSendByUser['contact']['miel']));
     if (!empty($humans)) {
         $errors[] = "Anti Spam activé";
@@ -95,7 +93,7 @@ function showResultToUser($messageResult)
         $html .= $errorsResult;
     } else  $html .= $messageResult;
     $html .= "</div>";
-    $html .= "<p>Redirection automatique vers la page d'accueil dans <span id='counter'>2000</span> secondes</p>";
+    $html .= "<p>Redirection automatique vers la page d'accueil dans <span id='counter'>20</span> secondes</p>";
     $html .= "<button type='button' id='redirect' onclick=window.location.href='https://pommine-fillatre.com' class='btn btn-secondary'>Retour à l'accueil</button>";
     $html .= "</div></div>";
     $html .= "</div>";
