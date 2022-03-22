@@ -1,0 +1,38 @@
+<article class="{{project.categories}} portfolio-item grey-shadow rounded-corners">
+    <div class="text-center">
+        <img src="{{project.coverUrl}}" alt="{{project.coverAlt}}" />
+        <hr>
+        <h4>{{project.title}}</h4>
+        <p>{{project.subtitle}}</p>
+    </div>
+    <div class="links portfolio-hover">
+        <button type="button" class="custom-btn pink-button" data-bs-toggle="modal"
+            data-bs-target="#{{project.name}}"><i class="bi bi-info-circle-fill"></i> Plus d'infos</button>
+        <a class="custom-btn shadow black-button" href="{{project.githubLink}}" rel=" noopener noreferrer nofollow"
+            target="_blank"><i class="bi bi-github"></i> Code</a>
+        <a class="custom-btn shadow purple-button" href="{{project.demoLink}}" rel="noopener noreferrer nofollow"
+            target="_blank"><i class="bi bi-arrow-right-square-fill"></i>Démo</a>
+    </div>
+    <div id="{{project.id}}" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">{{project.descriptionTitle}}</h4>
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <h5>{{project.descriptionSubTitle}}</h5>
+                        <p>{{project.description}}</p>
+                    </div>
+                    <a href="project.demoLink" rel="noopener noreferrer nofollow" target="_blank">
+                        <strong>Voir le site</strong>
+                    </a>
+                    <a href="{{project.githubLink}}" rel="noopener noreferrer nofollow" target="_blank">
+                        <strong>Voir le code</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

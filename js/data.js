@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const webAgency = `<div class="modal-dialog">
+    const webAgency = `<div class="modal-dialog">
     <div class="modal-content">
     <div class="modal-header">
         <h4 class="modal-title">Création d'un site en utilisant uniquement Html et Css
@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
         <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
     </div>
     <div class="modal-body">
-        <h6>Objectifs:</h6>
+        <h5>Objectifs:</h5>
         <p>Utilisation de Flex box</p>
         <p>Coder la structure d'une page web en HTML et Css</p>
         <p>Création d'un slider automatique</p>
-        <p>Site responsive: adapté aux mobiles, tablettes et ordinateurs</p>
+        <p></p>
         <p>Définir le contenu d'une page web à partir d'une maquette</p>
-        <p>Gérer la responsivité avec les Media Queries (css)</p>
+        <p></p>
         <a href="projets/webAgency/index.html" rel="noopener noreferrer nofollow"
             target="_blank">
             <strong>Voir le site</strong>
@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     </div>
     </div>`;
-  document.getElementById("webAgency").innerHTML = webAgency;
+    document.getElementById("webAgency").innerHTML = webAgency;
 
-  const locationVelo = `<div class="modal-dialog">
+    const locationVelo = `<div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
           <h4 class="modal-title">Utilisation des données d'une API en ligne</h4>
@@ -52,9 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
     </div>`;
-  document.getElementById("locationVelo").innerHTML = locationVelo;
+    document.getElementById("locationVelo").innerHTML = locationVelo;
 
-  const alaska = `<div class="modal-dialog">
+    const alaska = `<div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
             <h4 class="modal-title">Création d'un blog 100% personnalisé</h4>
@@ -83,9 +83,9 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     </div>
     </div>`;
-  document.getElementById("alaska").innerHTML = alaska;
+    document.getElementById("alaska").innerHTML = alaska;
 
-  const todolist = `<div class="modal-dialog">
+    const todolist = `<div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
             <h4 class="modal-title">Création d'une application basée sur symfony 4.3</h4>
@@ -111,9 +111,9 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     </div>
     </div>`;
-  document.getElementById("todolist").innerHTML = todolist;
+    document.getElementById("todolist").innerHTML = todolist;
 
-  const anniversaire = `<div class="modal-dialog">
+    const anniversaire = `<div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
           <h4 class="modal-title">Carte d'anniversaire animée avec Jquery</h4>
@@ -136,9 +136,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
     </div>`;
-  document.getElementById("anniversaire").innerHTML = anniversaire;
+    document.getElementById("anniversaire").innerHTML = anniversaire;
 
-  const architecture = `<div class="modal-dialog">
+    const architecture = `<div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
           <h4 class="modal-title">Création d'un site avec Bootstrap</h4>
@@ -158,9 +158,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
     </div>`;
-  document.getElementById("architecture").innerHTML = architecture;
+    document.getElementById("architecture").innerHTML = architecture;
 
-  const atlantida = `<div class="modal-dialog">
+    const atlantida = `<div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
           <h4 class="modal-title">Création d'un site à partir d'une maquette au format PSD
@@ -179,9 +179,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
     </div>`;
-  document.getElementById("atlantida").innerHTML = atlantida;
+    document.getElementById("atlantida").innerHTML = atlantida;
 
-  const movies = `<div class="modal-dialog">
+    const movies = `<div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
           <h4 class="modal-title">Création d'une application mobile</h4>
@@ -199,9 +199,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
     </div>`;
-  document.getElementById("movies").innerHTML = movies;
+    document.getElementById("movies").innerHTML = movies;
 
-  const teamGameBack = `<div class="modal-dialog">
+    const teamGameBack = `<div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
           <h4 class="modal-title">Création d'une API en utilisant Symfony</h4>
@@ -226,9 +226,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
   </div>`;
-  document.getElementById("teamGameBack").innerHTML = teamGameBack;
+    document.getElementById("teamGameBack").innerHTML = teamGameBack;
 
-  const teamGameFront = `<div class="modal-dialog">
+    const teamGameFront = `<div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
           <h4 class="modal-title">Création d'un mini-jeu en utilisant Angular</h4>
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
     </div>`;
-  document.getElementById("teamGameFront").innerHTML = teamGameFront;
+    document.getElementById("teamGameFront").innerHTML = teamGameFront;
 
 
 
