@@ -6,33 +6,32 @@
         <p>{{project.subtitle}}</p>
     </div>
     <div class="links portfolio-hover">
-        <button type="button" class="custom-btn pink-button" data-bs-toggle="modal"
-            data-bs-target="#{{project.name}}"><i class="bi bi-info-circle-fill"></i> Plus d'infos</button>
+        <button type="button" class="custom-btn pink-button open-modal" data-bs-toggle="modal"
+            data-bs-target="#portfolio-modal"><i class="bi bi-info-circle-fill"></i> Plus d'infos</button>
         <a class="custom-btn shadow black-button" href="{{project.githubLink}}" rel=" noopener noreferrer nofollow"
             target="_blank"><i class="bi bi-github"></i> Code</a>
         <a class="custom-btn shadow purple-button" href="{{project.demoLink}}" rel="noopener noreferrer nofollow"
             target="_blank"><i class="bi bi-arrow-right-square-fill"></i>Démo</a>
     </div>
-    <div id="{{project.id}}" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">{{project.descriptionTitle}}</h4>
-                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <h5>{{project.descriptionSubTitle}}</h5>
-                        <p>{{project.description}}</p>
-                    </div>
-                    <a href="project.demoLink" rel="noopener noreferrer nofollow" target="_blank">
-                        <strong>Voir le site</strong>
-                    </a>
-                    <a href="{{project.githubLink}}" rel="noopener noreferrer nofollow" target="_blank">
-                        <strong>Voir le code</strong>
-                    </a>
-                </div>
+</article>
+
+<div id="portfolio-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title project__title">{{project.descriptionTitle}}</h4>
+                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h5 class="project__subTitle">{{project.descriptionSubTitle}}</h5>
+                <div class="project__description">{{project.description}}</div>
+                <a class="project__demoLink" href="#" rel="noopener noreferrer nofollow" target="_blank">
+                    <strong>Voir le site</strong>
+                </a>
+                <a class="project__githubLink" href="#" rel="noopener noreferrer nofollow" target="_blank">
+                    <strong>Voir le code</strong>
+                </a>
             </div>
         </div>
     </div>
-</article>
+</div>

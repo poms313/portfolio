@@ -1,51 +1,43 @@
 document.addEventListener("DOMContentLoaded", async () => {
 
-    const data = [{
-        id: "webAgency",
-        name: "webAgency",
-        coverUrl: "images/portfolio/webagency.svg",
-        coverAlt: "",
-        title: "WebAgency",
-        subtitle: "Création d'un site en Html/CSS",
-        categories: "symfony",
-        descriptionTitle: "`test`",
-        descriptionSubTitle: `test`,
-        description: "Utilisation de Flex box<br>Coder la structure d'une page web en HTML et Css<br>Site responsive: adapté aux mobiles, tablettes et ordinateurs<br>Gérer la responsivité avec les Media Queries (CSS).",
-        githubLink: "https://github.com/poms313/integrerMaquette",
-        demoLink: "projets/webAgency/index.html",
-    }, {
-        name: "ttttt",
-        id: "ttttt",
-        coverUrl: "images/portfolio/webagency.svg",
-        coverAlt: "",
-        title: "ttttt",
-        subtitle: "Création d'un site en Html/CSS",
-        categories: "symfony",
-        description: "test",
-        descriptionTitle: "test",
-        githubLink: "https://github.com/poms313/integrerMaquette",
-        demoLink: "projets/webAgency/index.html",
-    }];
+    var json = await fetch('js/data.json');
+    const jsonData = await json.text();
+    const data = JSON.parse(jsonData);
 
     const template = await fetch("./portfolio.html");
     const html = await template.text();
+
     const parser = new DOMParser();
 
-    data.forEach((project) => {
+    // inject portfolio modal
+    const modal = parser.parseFromString(html, "text/html").getElementById("portfolio-modal");
+    document.getElementById("works").appendChild(modal);
+    modal.addEventListener('hidden.bs.modal', () => {
+        modal.querySelector('.project__title').innerHTML = "";
+        modal.querySelector('.project__subTitle').innerHTML = "";
+        modal.querySelector('.project__description').innerHTML = "";
+        modal.querySelector('.project__demoLink').href = "";
+        modal.querySelector('.project__githubLink').href = "";
+    });
+
+    // build project cards
+    data['list'].forEach((project) => {
         let resultHtml = html;
 
         Object.keys(project).forEach((key) => {
             resultHtml = resultHtml.replace(`{{project.${key}}}`, project[key]);
-        }
-        );
+        });
         const doc = parser.parseFromString(resultHtml, "text/html");
-        const element = doc.querySelector("article");
-        document.getElementById("works").appendChild(element);
-    }
-    )
+        const article = doc.querySelector("article");
 
+        article.querySelector('.open-modal').addEventListener('click', () => {
+            modal.querySelector('.project__title').innerHTML = project.title;
+            modal.querySelector('.project__subTitle').innerHTML = project.descriptionSubTitle;
+            modal.querySelector('.project__description').innerHTML = project.description;
+            modal.querySelector('.project__demoLink').href = project.demoLink;
+            modal.querySelector('.project__githubLink').href = project.githubLink;
+        })
 
-
-
-
+        document.getElementById("works").appendChild(article);
+    });
 });
