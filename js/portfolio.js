@@ -9,19 +9,36 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const parser = new DOMParser();
 
-    // inject portfolio modal
+    // build portfolio modal
     const modal = parser.parseFromString(html, "text/html").getElementById("portfolio-modal");
     document.getElementById("works").appendChild(modal);
+    const titleElement = modal.querySelector('.project__title');
+    const subTitleElement = modal.querySelector('.project__subTitle');
+    const descriptionElement = modal.querySelector('.project__description');
+    let demoLinkElement = modal.querySelector('.project__demoLink');
+    const githubLinkElement = modal.querySelector('.project__githubLink');
+
     modal.addEventListener('hidden.bs.modal', () => {
-        modal.querySelector('.project__title').innerHTML = "";
-        modal.querySelector('.project__subTitle').innerHTML = "";
-        modal.querySelector('.project__description').innerHTML = "";
-        modal.querySelector('.project__demoLink').href = "";
-        modal.querySelector('.project__githubLink').href = "";
+        titleElement.innerHTML = "";
+        subTitleElement.innerHTML = "";
+        descriptionElement.innerHTML = "";
+        demoLinkElement.href = "";
+        demoLinkElement.classList.remove("fade");
+        githubLinkElement.href = "";
+        githubLinkElement.classList.remove("fade");
+    });
+    modal.addEventListener('shown.bs.modal', () => {
+        if (demoLinkElement.href.includes("null")) {
+            demoLinkElement.classList.add("fade");
+        }
+        if (githubLinkElement.href.includes("null")) {
+            githubLinkElement.classList.add("fade");
+        }
     });
 
-    // build project cards
-    data['list'].forEach((project) => {
+
+    // build portfolio cards
+    data['projects'].forEach((project) => {
         let resultHtml = html;
 
         Object.keys(project).forEach((key) => {
@@ -31,12 +48,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         const article = doc.querySelector("article");
 
         article.querySelector('.open-modal').addEventListener('click', () => {
-            modal.querySelector('.project__title').innerHTML = project.title;
-            modal.querySelector('.project__subTitle').innerHTML = project.descriptionSubTitle;
-            modal.querySelector('.project__description').innerHTML = project.description;
-            modal.querySelector('.project__demoLink').href = project.demoLink;
-            modal.querySelector('.project__githubLink').href = project.githubLink;
+            titleElement.innerHTML = project.title;
+            subTitleElement.innerHTML = project.descriptionSubTitle;
+            descriptionElement.innerHTML = project.description;
+            demoLinkElement.href = project.demoLink;
+            githubLinkElement.href = project.githubLink;
         })
+
 
         document.getElementById("works").appendChild(article);
     });

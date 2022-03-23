@@ -1,28 +1,64 @@
 {
-    "list": [
+    "projects": [
         {
+            "categories": "html",
             "coverUrl": "images/portfolio/webagency.svg",
-            "coverAlt": "",
+            "coverAlt": "WebAgency home page, HTML/CSS",
             "title": "WebAgency",
             "subtitle": "Création d'un site en Html/CSS",
-            "categories": "symfony",
-            "descriptionTitle": "test",
-            "descriptionSubTitle": "fff",
+            "descriptionTitle": "Création d'un site en utilisant en Html/CSS",
+            "descriptionSubTitle": "Objectifs:",
             "description": "Utilisation de Flex box<br>Coder la structure d'une page web en HTML et Css<br>Site responsive: adapté aux mobiles, tablettes et ordinateurs<br>Gérer la responsivité avec les Media Queries (CSS).",
-            "githubLink": "https://github.com/poms313/integrerMaquette",
-            "demoLink": "projets/webAgency/index.html"
+            "demoLink": "projets/webAgency/index.html",
+            "githubLink": "https://github.com/poms313/integrerMaquette"
         },
         {
-            "coverUrl": "images/portfolio/webagency.svg",
+            "categories": "js html",
+            "coverUrl": "images/portfolio/locationVelo.svg",
+            "coverAlt": "location de velo application JavaScript utilise les données d 'une API",
+            "title": "Location de vélos",
+            "subtitle": "Utilisation d'une API",
+            "descriptionTitle": "Utilisation des données d'une API",
+            "descriptionSubTitle": "Création d'une application en Javascript",
+            "description": "Récupération de données via une api externe<br>Authentification d'une signature via canvas<br>Ecrire un code source lisible respectant les normes du W3C<br>Site responsive: adapté aux mobiles, tables et ordinateurs",
+            "demoLink": "projets/location-velo/index.html",
+            "githubLink": "https://github.com/poms313/locationVelos"
+        },
+        {
+            "categories": "php js",
+            "coverUrl": "images/portfolio/alaska.svg",
+            "coverAlt": "application type blog en php, espace admin, gestion des commentaires",
+            "title": "Billet pour l'Alaska",
+            "subtitle": "Blog créé à 100% en PHP",
+            "descriptionTitle": "Création d'un blog 100% personnalisé",
+            "descriptionSubTitle": "Organiser le code en langage PHP",
+            "description": "Création des différents contrôleurs afin de gérer la publication des articles et des commentaires<br>Gérer les restrictions d'accès à l'espace d'administrations (plusieurs niveaux d'autorisations).<br>Utilisation d'une base de donnée sécurisée MySQL<br>Sécuriser les données et mots de passes utilisés.",
+            "demoLink": "https://p4php.pommine-fillatre.com/",
+            "githubLink": "https://github.com/poms313/blogPhp"
+        },
+        {
+            "categories": "symfony php",
+            "coverUrl": "images/portfolio/todolist.svg",
+            "coverAlt": "application type gestionnaire de tâches avec Symfony, espace admin, envoi automatique de mails",
+            "title": "To do List",
+            "subtitle": "Gestionnaire de tâches Symfony",
+            "descriptionTitle": "Création d'une application basée sur symfony 4.3",
+            "descriptionSubTitle": "Organiser le code avec le framework Symfony",
+            "description": "Conception de templates dynamiques avec Twig<br>Envoi automatique de mails Html personnalisés via SwiftMailer<br>Upload de fichiers<br>Espace membre et gestion des accès utilisateurs et administrateurs",
+            "demoLink": "null",
+            "githubLink": "https://github.com/poms313/todolist"
+        },
+        {
+            "categories": "",
+            "coverUrl": "",
             "coverAlt": "",
-            "title": "WebAgency",
-            "subtitle": "Création d'un site en Html/CSS",
-            "categories": "symfony",
-            "descriptionTitle": "test",
-            "descriptionSubTitle": "fff",
-            "description": "Utilisation de Flex box<br>Coder la structure d'une page web en HTML et Css<br>Site responsive: adapté aux mobiles, tablettes et ordinateurs<br>Gérer la responsivité avec les Media Queries (CSS).",
-            "githubLink": "https://github.com/poms313/integrerMaquette",
-            "demoLink": "projets/webAgency/index.html"
+            "title": "test",
+            "subtitle": "",
+            "descriptionTitle": "",
+            "descriptionSubTitle": "",
+            "description": "",
+            "demoLink": "null",
+            "githubLink": "null"
         }
     ]
 }
