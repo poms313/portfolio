@@ -23,16 +23,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         subTitleElement.innerHTML = "";
         descriptionElement.innerHTML = "";
         demoLinkElement.href = "";
-        demoLinkElement.classList.remove("fade");
+        demoLinkElement.style.display = "inline-block";
         githubLinkElement.href = "";
-        githubLinkElement.classList.remove("fade");
+        githubLinkElement.style.display = "inline-block";
     });
     modal.addEventListener('shown.bs.modal', () => {
         if (demoLinkElement.href.includes("null")) {
-            demoLinkElement.classList.add("fade");
+            demoLinkElement.style.display = "none";
         }
         if (githubLinkElement.href.includes("null")) {
-            githubLinkElement.classList.add("fade");
+            githubLinkElement.style.display = "none";
         }
     });
 
