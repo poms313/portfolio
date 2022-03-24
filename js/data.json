@@ -1,4 +1,36 @@
 {
+    "skills": [
+        {
+            "title": "Bases",
+            "itemOneSrc": "",
+            "itemOne": "",
+            "itemOneTitle": "",
+            "itemTwoSrc": "",
+            "itemTwoAlt": "",
+            "itemTwoTitle": "",
+            "itemTreeSrc": "",
+            "itemTreeAlt": "",
+            "itemTreeTitle": "",
+            "itemFourSrc": "",
+            "itemFourAlt": "",
+            "itemFourTitle": ""
+        },
+        {
+            "title": "Bases",
+            "itemOneSrc": "",
+            "itemOne": "",
+            "itemOneTitle": "",
+            "itemTwoSrc": "",
+            "itemTwoAlt": "",
+            "itemTwoTitle": "",
+            "itemTreeSrc": "",
+            "itemTreeAlt": "",
+            "itemTreeTitle": "",
+            "itemFourSrc": "",
+            "itemFourAlt": "",
+            "itemFourTitle": ""
+        }
+    ],
     "projects": [
         {
             "categories": "html",

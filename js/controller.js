@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const parser = new DOMParser();
 
+    // buils skills list
+
+
+
+
     // build portfolio modal
     const modal = parser.parseFromString(html, "text/html").getElementById("portfolio-modal");
     document.getElementById("works").appendChild(modal);
@@ -35,7 +40,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             githubLinkElement.style.display = "none";
         }
     });
-
 
     // build portfolio cards
     data['projects'].forEach((project) => {
