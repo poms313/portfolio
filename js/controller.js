@@ -4,18 +4,32 @@ document.addEventListener("DOMContentLoaded", async () => {
     const jsonData = await json.text();
     const data = JSON.parse(jsonData);
 
-    const template = await fetch("./portfolio.html");
-    const html = await template.text();
-
     const parser = new DOMParser();
 
     // buils skills list
+    const templateSkill = await fetch("./html/skillItem.html");
+    const htmlSkill = await templateSkill.text();
+
+    data['skills'].forEach((skill) => {
+        let resultHtml = htmlSkill;
+        Object.keys(skill).forEach((key) => {
+            resultHtml = resultHtml.replace(`{{skill.${key}}}`, skill[key]);
+        });
+
+        const doc = parser.parseFromString(resultHtml, "text/html");
+        const article = doc.querySelector("article");
+
+        document.getElementById("skills-list").appendChild(article);
+    });
 
 
 
+
+    const templatePortfolio = await fetch("./html/portfolioItem.html");
+    const htmlPortfolio = await templatePortfolio.text();
 
     // build portfolio modal
-    const modal = parser.parseFromString(html, "text/html").getElementById("portfolio-modal");
+    const modal = parser.parseFromString(htmlPortfolio, "text/html").getElementById("portfolio-modal");
     document.getElementById("works").appendChild(modal);
     const titleElement = modal.querySelector('.project__title');
     const subTitleElement = modal.querySelector('.project__subTitle');
@@ -43,7 +57,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // build portfolio cards
     data['projects'].forEach((project) => {
-        let resultHtml = html;
+        let resultHtml = htmlPortfolio;
 
         Object.keys(project).forEach((key) => {
             resultHtml = resultHtml.replace(`{{project.${key}}}`, project[key]);
