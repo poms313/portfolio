@@ -2,33 +2,58 @@
     "skills": [
         {
             "title": "Bases",
-            "itemOneSrc": "",
-            "itemOne": "",
-            "itemOneTitle": "",
-            "itemTwoSrc": "",
-            "itemTwoAlt": "",
-            "itemTwoTitle": "",
-            "itemTreeSrc": "",
-            "itemTreeAlt": "",
-            "itemTreeTitle": "",
-            "itemFourSrc": "",
-            "itemFourAlt": "",
-            "itemFourTitle": ""
+            "itemOneSrc": "images/logosLanguages/html5.svg",
+            "itemOneTitle": "HTML",
+            "itemTwoSrc": "images/logosLanguages/css3.svg",
+            "itemTwoTitle": "CSS",
+            "itemTreeSrc": "images/logosLanguages/bootstrap.svg",
+            "itemTreeTitle": "Bootstrap",
+            "itemFourSrc": "null",
+            "itemFourTitle": "null"
         },
         {
-            "title": "Bases",
-            "itemOneSrc": "",
-            "itemOne": "",
-            "itemOneTitle": "",
-            "itemTwoSrc": "",
-            "itemTwoAlt": "",
-            "itemTwoTitle": "",
-            "itemTreeSrc": "",
-            "itemTreeAlt": "",
-            "itemTreeTitle": "",
-            "itemFourSrc": "",
-            "itemFourAlt": "",
-            "itemFourTitle": ""
+            "title": "Code",
+            "itemOneSrc": "images/logosLanguages/git.svg",
+            "itemOneTitle": "GitHub",
+            "itemTwoSrc": "images/logosLanguages/visual.svg",
+            "itemTwoTitle": "VS Code",
+            "itemTreeSrc": "images/logosLanguages/w3c.svg",
+            "itemTreeTitle": "Shopify",
+            "itemFourSrc": "null",
+            "itemFourTitle": "null"
+        },
+        {
+            "title": "CMS",
+            "itemOneSrc": "images/logosLanguages/wordpress.svg",
+            "itemOneTitle": "WordPress",
+            "itemTwoSrc": "images/logosLanguages/prestashop.svg",
+            "itemTwoTitle": "Prestashop",
+            "itemTreeSrc": "images/logosLanguages/shopify.svg",
+            "itemTreeTitle": "W3C",
+            "itemFourSrc": "null",
+            "itemFourTitle": "null"
+        },
+        {
+            "title": "Javascript",
+            "itemOneSrc": "images/logosLanguages/javascript.svg",
+            "itemOneTitle": "Javascript",
+            "itemTwoSrc": "images/logosLanguages/react.svg",
+            "itemTwoTitle": "React",
+            "itemTreeSrc": "images/logosLanguages/angular.svg",
+            "itemTreeTitle": "Angular",
+            "itemFourSrc": "images/logosLanguages/jquery.svg",
+            "itemFourTitle": "Jquery"
+        },
+        {
+            "title": "Back-end",
+            "itemOneSrc": "images/logosLanguages/php.svg",
+            "itemOneTitle": "PHP",
+            "itemTwoSrc": "images/logosLanguages/symfony.svg",
+            "itemTwoTitle": "Symfony",
+            "itemTreeSrc": "images/logosLanguages/mysql.svg",
+            "itemTreeTitle": "MySql",
+            "itemFourSrc": "images/logosLanguages/phpmyadmin.svg",
+            "itemFourTitle": "PhpMyAdmin"
         }
     ],
     "projects": [
