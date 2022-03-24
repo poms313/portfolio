@@ -18,11 +18,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         const doc = parser.parseFromString(resultHtml, "text/html");
         const article = doc.querySelector("article");
-
         document.getElementById("skills-list").appendChild(article);
     });
-
-
+    const skillImg = document.querySelectorAll('.skillImg');
+    skillImg.forEach((img) => {
+        if (img.src.includes("#")) {
+            img.parentElement.remove();
+        }
+    });
 
 
     const templatePortfolio = await fetch("./html/portfolioItem.html");
